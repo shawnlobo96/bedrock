@@ -12,23 +12,23 @@
     <h3 class="mzp-c-sticky-promo-title">{{ ftl('firefox-sticky-promo-meet-our-family-of') }}</h3>
     <ul class="promo-products-list">
       <li>
-        <a class="promo-products-link" href="#">
+        <a data-link-name="Browsers" data-link-type="link" class="promo-products-link" href="{{ url('firefox.browsers.index') }}">
           <img src="{{ static('protocol/img/logos/firefox/browser/logo.svg') }}" alt="">
           Browsers
         </a>
-        <a class="promo-products-link" href="#">
+        <a data-link-name="Monitor" data-link-type="link" class="promo-products-link" href="https://monitor.firefox.com/{{ referral|safe }}" rel="external noopener">
           <img src="{{ static('protocol/img/logos/firefox/monitor/logo.svg') }}" alt="">
           Monitor
         </a>
-        <a class="promo-products-link" href="#">
+        <a data-link-name="Lockwise" data-link-type="link" class="promo-products-link" rel="" href="{{ url('firefox.products.lockwise') }}">
           <img src="{{ static('protocol/img/logos/firefox/lockwise/logo.svg') }}" alt="">
           Lockwise
         </a>
-        <a class="promo-products-link" href="#">
+        <a data-link-name="Pocket" data-link-type="link" class="promo-products-link" rel="external noopener" href="https://getpocket.com/{{ referral|safe }}">
           <img src="{{ static('protocol/img/logos/pocket/pocket.svg') }}" alt="">
           Pocket
         </a>
-        <a class="promo-products-link" href="#">
+        <a data-link-name="Mozilla VPN" data-link-type="link" class="promo-products-link" rel="external noopener" href="https://vpn.mozilla.org/{{ referral|safe }}">
           <img src="{{ static('img/icons/connection.svg') }}" alt="">
           Mozilla VPN
         </a>
