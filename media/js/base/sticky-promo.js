@@ -5,12 +5,11 @@
 (function() {
     'use strict';
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var closeButton = document.querySelector('.mzp-c-sticky-promo-close');
+    var closeButton = document.querySelector('.mzp-c-sticky-promo-close');
 
-        closeButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.currentTarget.parentNode.classList.add('mzp-a-fade-out');
-        }, false);
-    });
+    closeButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.currentTarget.parentNode.classList.add('mzp-a-fade-out');
+    }, false);
+
 })();
