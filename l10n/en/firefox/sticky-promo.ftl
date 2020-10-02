@@ -8,3 +8,10 @@
 # Meet our family of products
 firefox-sticky-promo-meet-our-family-of = Meet our family of products
 firefox-sticky-promo-get-the-latest-firefox = Get the latest { -brand-name-firefox } browser.
+
+# Products List
+firefox-sticky-promo-browsers = Browsers
+firefox-sticky-promo-monitor = { -brand-name-monitor }
+firefox-sticky-promo-lockwise = { -brand-name-lockwise }
+firefox-sticky-promo-pocket = { -brand-name-pocket }
+firefox-sticky-promo-mozilla-vpn = { -brand-name-mozilla-vpn }
