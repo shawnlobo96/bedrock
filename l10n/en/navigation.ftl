@@ -70,6 +70,10 @@ navigation-mozilla-open-source-support = { -brand-name-mozilla } Open Source Sup
 navigation-mozilla-manifesto = { -brand-name-mozilla } Manifesto
 navigation-menu = Menu
 navigation-check-out-the-benefits = Check out the Benefits
+
+navigation-firefox-browsers = { -brand-name-firefox } Browsers
+navigation-close-firefox-browsers-menu = Close { -brand-name-firefox } Browsers menu
+
 navigation-browsers = Browsers
 navigation-close-browsers-menu = Close Browsers menu
 navigation-download = Download
@@ -98,7 +102,14 @@ navigation-close-join-menu = Close Join menu
 navigation-sign-in = Sign In
 navigation-benefits = Benefits
 navigation-protect-your-life-online = Protect your life online with a whole family of privacy-first products.
+
+navigation-who-we-are = Who We Are
+navigation-close-who-we-are-menu = Close Who We Are menu
+
+# Outdated string
 navigation-about = About
+
+# Outdated string
 navigation-close-about-menu = Close About menu
 navigation-meet-the-technology-company = Meet the technology company that puts people before profit.
 navigation-new-features = New Features
@@ -108,7 +119,10 @@ navigation-same-speed-and-safety = Same speed and safety you trust, designed jus
 # Outdated string
 navigation-add-ons = Add-ons
 
+# Outdated string
 navigation-projects = Projects
+
+# Outdated string
 navigation-close-projects-menu = Close Projects menu
 navigation-donate-your-voice-to = Donate your voice to help make voice recognition open to everyone.
 navigation-machine-learning = Machine Learning

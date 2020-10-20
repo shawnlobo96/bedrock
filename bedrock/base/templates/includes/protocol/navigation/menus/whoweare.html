@@ -1,0 +1,72 @@
+{# This Source Code Form is subject to the terms of the Mozilla Public
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at http://mozilla.org/MPL/2.0/. -#}
+
+ {% set utm_params = 'utm_source=www.mozilla.org&utm_medium=referral&utm_campaign=nav&utm_content=who-we-are' %}
+
+<li class="mzp-c-menu-category mzp-has-drop-down mzp-js-expandable">
+  <a class="mzp-c-menu-title" href="{{ url('mozorg.about') }}" aria-haspopup="true" aria-controls="mzp-c-menu-panel-about">{{ ftl('navigation-who-we-are') }}</a>
+  <div class="mzp-c-menu-panel mzp-has-card" id="mzp-c-menu-panel-about">
+    <div class="mzp-c-menu-panel-container">
+      <button class="mzp-c-menu-button-close" type="button" aria-controls="mzp-c-menu-panel-about">{{ ftl('navigation-close-who-we-are-menu') }}</button>
+      <div class="mzp-c-menu-panel-content">
+        <ul class="mzp-l-rows-three">
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="{{ url('mozorg.about.manifesto') }}" data-link-name="Mozilla" data-link-type="nav" data-link-position="topnav" data-link-group="about">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">The Mozilla Manifesto</h4>
+                <p class="mzp-c-menu-item-desc">Learn about the values and principles that guide our mission.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://foundation.mozilla.org/?{{ utm_params }}" data-link-name="Mozilla Foundation" data-link-type="nav" data-link-position="topnav" data-link-group="about">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Mozilla Foundation</h4>
+                <p class="mzp-c-menu-item-desc">Meet the non-profit behind Firefox that stands for a better web.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="{{ url('mozorg.contribute.index') }}" data-link-name="Get Involved" data-link-type="nav" data-link-position="topnav" data-link-group="about">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">{{ ftl('navigation-get-involved') }}</h4>
+                <p class="mzp-c-menu-item-desc">Join the fight for a healthy internet.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="{{ url('mozorg.about.leadership') }}" data-link-name="Leadership" data-link-type="nav" data-link-position="topnav" data-link-group="about">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Leadership</h4>
+                <p class="mzp-c-menu-item-desc">Meet the team that’s building technology for a better internet.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://careers.mozilla.org/?{{ utm_params }}" data-link-name="Careers" data-link-type="nav" data-link-position="topnav" data-link-group="about">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Careers</h4>
+                <p class="mzp-c-menu-item-desc">Work for a mission-driven organization that makes people-first products.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="http://blog.mozilla.org/?{{ utm_params }}" data-link-name="Mozilla Blog" data-link-type="nav" data-link-position="topnav" data-link-group="about">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Mozilla Blog</h4>
+                <p class="mzp-c-menu-item-desc">Learn about Mozilla and the issues that matter to us.</p>
+              </a>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </div><!-- close .mzp-c-menu-panel-container -->
+  </div><!-- close .mzp-c-menu-panel -->
+</li><!-- close who we are -->

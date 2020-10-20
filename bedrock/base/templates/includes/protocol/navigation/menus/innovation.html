@@ -1,0 +1,81 @@
+{# This Source Code Form is subject to the terms of the Mozilla Public
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at http://mozilla.org/MPL/2.0/. -#}
+
+{% set utm_params = 'utm_source=www.mozilla.org&utm_medium=referral&utm_campaign=nav&utm_content=innovation' %}
+
+<li class="mzp-c-menu-category mzp-has-drop-down mzp-js-expandable">
+  <a class="mzp-c-menu-title" href="https://labs.mozilla.org/" aria-haspopup="true" aria-controls="mzp-c-menu-panel-innovation">Innovation</a>
+  <div class="mzp-c-menu-panel mzp-has-card" id="mzp-c-menu-panel-developers">
+    <div class="mzp-c-menu-panel-container">
+      <button class="mzp-c-menu-button-close" type="button" aria-controls="mzp-c-menu-panel-innovation">Close Innovation menu</button>
+      <div class="mzp-c-menu-panel-content">
+        <ul class="mzp-l-rows-four">
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://hubs.mozilla.com/?{{ utm_params }}" data-link-name="Mozilla Hubs" data-link-type="nav" data-link-position="topnav" data-link-group="innovation">
+                <img src="{{ static('protocol/img/logos/firefox/browser/developer/logo-sm.png') }}" class="mzp-c-menu-item-icon" width="32" height="32" alt="" loading="lazy">
+                <h4 class="mzp-c-menu-item-title">Mozilla Hubs</h4>
+                <p class="mzp-c-menu-item-desc">Gather in this interactive, online, multi-dimensional social space.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="{{ url('firefox.developer.index') }}" data-link-name="Firefox Developer Edition" data-link-type="nav" data-link-position="topnav" data-link-group="innovation">
+                <img src="{{ static('protocol/img/logos/firefox/browser/developer/logo-sm.png') }}" class="mzp-c-menu-item-icon" width="32" height="32" alt="" loading="lazy">
+                <h4 class="mzp-c-menu-item-title">{{ ftl('navigation-firefox-developer-edition') }}</h4>
+                <p class="mzp-c-menu-item-desc">Get the Firefox browser built just for developers.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://developer.mozilla.org/{{ utm_params }}" data-link-name="MDN Web Docs" data-link-type="nav" data-link-position="topnav" data-link-group="innovation">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">{{ ftl('navigation-mdn-web-docs') }}</h4>
+                <p class="mzp-c-menu-item-desc">Check out the home for web developer resources.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://mixedreality.mozilla.org/firefox-reality/?{{ utm_params }}" data-link-name="Firefox Reality" data-link-type="nav" data-link-position="topnav" data-link-group="innovation">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Firefox Reality</h4>
+                <p class="mzp-c-menu-item-desc">Explore the web with Firefox’s virtual reality browser.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://iot.mozilla.org/?{{ utm_params }}" data-link-name="IoT" data-link-type="nav" data-link-position="topnav" data-link-group="innovation">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">IoT</h4>
+                <p class="mzp-c-menu-item-desc">Find out more about Mozilla’s Web Things.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://commonvoice.mozilla.org/?{{ utm_params }}" data-link-name="Common Voice" data-link-type="nav" data-link-position="topnav" data-link-group="innovation">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Common Voice</h4>
+                <p class="mzp-c-menu-item-desc">Donate your voice so the future of the web can hear everyone.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://research.mozilla.org/webassembly/?{{ utm_params }}" data-link-name="WebAssembly" data-link-type="nav" data-link-position="topnav" data-link-group="innovation">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">WebAssembly</h4>
+                <p class="mzp-c-menu-item-desc">Learn more about the new, low-level, assembly-like language.</p>
+              </a>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </div><!-- close .mzp-c-menu-panel-container -->
+  </div><!-- close .mzp-c-menu-panel -->
+</li><!-- close innovation -->

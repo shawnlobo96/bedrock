@@ -1,0 +1,97 @@
+{# This Source Code Form is subject to the terms of the Mozilla Public
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at http://mozilla.org/MPL/2.0/. -#}
+
+{% set utm_params = 'utm_source=www.mozilla.org&utm_medium=referral&utm_campaign=nav&utm_content=products' %}
+
+<li class="mzp-c-menu-category mzp-has-drop-down mzp-js-expandable">
+  <a class="mzp-c-menu-title" href="{{ url('firefox.products.index') }}" aria-haspopup="true" aria-controls="mzp-c-menu-panel-projects">{{ ftl('navigation-products') }}</a>
+  <div class="mzp-c-menu-panel mzp-has-card" id="mzp-c-menu-panel-projects">
+    <div class="mzp-c-menu-panel-container">
+      <button class="mzp-c-menu-button-close" type="button" aria-controls="mzp-c-menu-panel-projects">{{ ftl('navigation-close-products-menu') }}</button>
+      <div class="mzp-c-menu-panel-content">
+        <ul class="mzp-l-rows-four">
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://monitor.firefox.com/?{{ utm_params }}" data-link-name="Firefox Monitor" data-link-type="nav" data-link-position="topnav" data-link-group="products">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Firefox Monitor</h4>
+                <p class="mzp-c-menu-item-desc">See if your email has appeared in a company’s data breach.</p>
+              </a>
+            </section>
+          </li>
+
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="" data-link-name="Facebook Container" data-link-type="nav" data-link-position="topnav" data-link-group="products">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Facebook Container</h4>
+                <p class="mzp-c-menu-item-desc">Stop Facebook from collecting your data outside their site.</p>
+              </a>
+            </section>
+          </li>
+
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://getpocket.com/firefox_learnmore/?{{ utm_params }}" data-link-name="Pocket" data-link-type="nav" data-link-position="topnav" data-link-group="products">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Pocket</h4>
+                <p class="mzp-c-menu-item-desc">Read and listen to articles from anywhere — distraction free.</p>
+              </a>
+            </section>
+          </li>
+
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://vpn.mozilla.org/?{{ utm_params }}" data-link-name="Mozilla VPN" data-link-type="nav" data-link-position="topnav" data-link-group="products">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Mozilla VPN</h4>
+                <p class="mzp-c-menu-item-desc">Get protection beyond your browser, on all your devices.</p>
+              </a>
+            </section>
+          </li>
+
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://hubs.mozilla.com/?utm_source=www.mozilla.org&amp;utm_medium=referral&amp;utm_campaign=nav&amp;utm_content=projects" data-link-name="Hubs" data-link-type="nav" data-link-position="topnav" data-link-group="projects">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Mozilla VPN</h4>
+                <p class="mzp-c-menu-item-desc">Get protection beyond your browser, on all your devices.</p>
+              </a>
+            </section>
+          </li>
+
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="{{ url('firefox.privacy.products') }}" data-link-name="Hubs" data-link-type="nav" data-link-position="topnav" data-link-group="projects">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Product Promise</h4>
+                <p class="mzp-c-menu-item-desc">Learn how each Firefox product protects and respects your data.</p>
+              </a>
+            </section>
+          </li>
+
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://relay.firefox.com/?{{ utm_params }}" data-link-name="Firefox Relay" data-link-type="nav" data-link-position="topnav" data-link-group="projects">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Firefox Relay (beta)</h4>
+                <p class="mzp-c-menu-item-desc">Spare your inbox with Firefox-generated email addresses for new accounts.</p>
+              </a>
+            </section>
+          </li>
+
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://fpn.firefox.com/?{{ utm_params }}" data-link-name="Hubs" data-link-type="nav" data-link-position="topnav" data-link-group="projects">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Firefox FPN (beta)</h4>
+                <p class="mzp-c-menu-item-desc">Protect your browser’s connection to the internet.</p>
+              </a>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </div><!-- close .mzp-c-menu-panel-container -->
+  </div><!-- close .mzp-c-menu-panel -->
+</li><!-- close products -->

@@ -1,0 +1,72 @@
+{# This Source Code Form is subject to the terms of the Mozilla Public
+ # License, v. 2.0. If a copy of the MPL was not distributed with this
+ # file, You can obtain one at http://mozilla.org/MPL/2.0/. -#}
+
+{% set utm_params = 'utm_source=www.mozilla.org&utm_medium=referral&utm_campaign=nav&utm_content=firefox' %}
+
+<li class="mzp-c-menu-category mzp-has-drop-down mzp-js-expandable">
+  <a class="mzp-c-menu-title" href="{{ url('firefox') }}" aria-haspopup="true" aria-controls="mzp-c-menu-panel-firefox">{{ ftl('navigation-firefox-browsers') }}</a>
+  <div class="mzp-c-menu-panel mzp-has-card" id="mzp-c-menu-panel-firefox">
+    <div class="mzp-c-menu-panel-container">
+      <button class="mzp-c-menu-button-close" type="button" aria-controls="mzp-c-menu-panel-firefox">{{ ftl('navigation-close-firefox-browsers-menu') }}</button>
+      <div class="mzp-c-menu-panel-content">
+        <ul class="mzp-l-rows-three">
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="{{ url('firefox.new') }}" data-link-name="Firefox Quantum Desktop Browser" data-link-type="nav" data-link-position="topnav" data-link-group="firefox">
+                <img src="{{ static('protocol/img/logos/firefox/browser/logo-sm.png') }}" class="mzp-c-menu-item-icon" width="32" height="32" alt="" loading="lazy">
+                <h4 class="mzp-c-menu-item-title">Firefox for Desktop</h4>
+                <p class="mzp-c-menu-item-desc">Get the non-profit-backed browser on Windows, Mac or Linux.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="{{ url('firefox.mobile.index') }}" data-link-name="Firefox for Android" data-link-type="nav" data-link-position="topnav" data-link-group="firefox">
+                <img src="{{ static('protocol/img/logos/firefox/browser/logo-sm.png') }}" class="mzp-c-menu-item-icon" width="32" height="32" alt="" loading="lazy">
+                <h4 class="mzp-c-menu-item-title">Firefox for Android</h4>
+                <p class="mzp-c-menu-item-desc">Get the customizable mobile browser for Android smartphones.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="{{ url('firefox.mobile.index') }}" data-link-name="Firefox for Android" data-link-type="nav" data-link-position="topnav" data-link-group="firefox">
+                <img src="{{ static('protocol/img/logos/firefox/browser/logo-sm.png') }}" class="mzp-c-menu-item-icon" width="32" height="32" alt="" loading="lazy">
+                <h4 class="mzp-c-menu-item-title">Firefox for iOS</h4>
+                <p class="mzp-c-menu-item-desc">Get the mobile browser for your iPhone or iPad.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="{{ url('firefox.privacy.index') }}" data-link-name="Privacy Promise" data-link-type="nav" data-link-position="topnav" data-link-group="firefox">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Privacy Promise</h4>
+                <p class="mzp-c-menu-item-desc">Learn how Firefox treats your data with respect.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="https://blog.mozilla.org/firefox/?{{ utm_params }}" data-link-name="Firefox Blog" data-link-type="nav" data-link-position="topnav" data-link-group="firefox">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Firefox Blog</h4>
+                <p class="mzp-c-menu-item-desc">Read about new Firefox features and ways to stay safe online.</p>
+              </a>
+            </section>
+          </li>
+          <li>
+            <section class="mzp-c-menu-item mzp-has-icon">
+              <a class="mzp-c-menu-item-link" href="/firefox/{{ latest_firefox_version }}/releasenotes/" data-link-name="Release Notes" data-link-type="nav" data-link-position="topnav" data-link-group="firefox">
+                <svg class="mzp-c-menu-item-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 21a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2zm-9-9a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="#000" fill-rule="nonzero"/></svg>
+                <h4 class="mzp-c-menu-item-title">Release Notes</h4>
+                <p class="mzp-c-menu-item-desc">Get the details on the latest Firefox updates.</p>
+              </a>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </div><!-- close .mzp-c-menu-panel-container -->
+  </div><!-- close .mzp-c-menu-panel -->
+</li><!-- close firefox -->
