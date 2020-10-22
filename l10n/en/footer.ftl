@@ -3,8 +3,12 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 footer-firefox = { -brand-name-firefox }
+footer-mozilla-manifesto = { -brand-name-mozilla } Manifesto
+footer-privacy-hub = Privacy Hub
 footer-privacy = Privacy
 footer-press = Press
+footer-corporate-blog = Corporate Blog
+footer-browser-comparison = Browser Comparison
 footer-brand-standards = Brand Standards
 footer-browsers = Browsers
 footer-desktop = Desktop
@@ -50,3 +54,5 @@ footer-go = Go
 footer-twitter = { -brand-name-twitter }
 footer-instagram = { -brand-name-instagram }
 footer-youtube = { -brand-name-youtube }
+footer-follow-mozilla = Follow @{ -brand-name-mozilla }
+footer-follow-firefox = Follow @{ -brand-name-firefox }
