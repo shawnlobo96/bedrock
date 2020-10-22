@@ -46,10 +46,6 @@
   {{ css_bundle('firefox_releasenotes') }}
 {% endblock %}
 
-{% block global_nav %}
-  {% include 'includes/protocol/navigation/menu-firefox/index.html' %}
-{% endblock %}
-
 {% set channel_name = '' if release.channel == 'Release' else release.channel %}
 
 {% set download_title = download_title|default(_('Get the most recent version')) %}
